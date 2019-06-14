@@ -34,6 +34,8 @@ var HAL = function(inputNumber) {
 
 // maybe have index go up by one as long as its<=longList somehow put index spot into another array as a number. then print all numbers, but anything with a 3,2,1, gets swapped.
 
+
+
 // somehow I need to get an array with the same number of spots as the value of longList (call it weirdArray)
 // and then compare the weirdArray[index]+1?
 // except anything with a 3,2,1(anywhere in it) gets a special response, everything else prints the number

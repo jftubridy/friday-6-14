@@ -32,7 +32,9 @@ var HAL = function(inputNumber) {
   return '  '+inputNumber + '?';
 }
 
-
+//somehow I need to get an array the length=longList
+//and then print the value of each [index]
+//except anything with a 3,2,1 gets a special
 
 var longHAL = function(longList) {
   alert(longList);

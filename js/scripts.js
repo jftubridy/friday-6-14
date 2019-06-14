@@ -32,27 +32,6 @@ var HAL = function(inputNumber) {
   return '  '+inputNumber + '?';
 }
 
-
-
-var longHAL = function(longList) {
-  debugger;
-  alert(longList);
-  for (index = 0; index < long; index++){
-    if (index = 2){
-      return "I'm Sorry Dave, I'm afraid I can't do that.";
-    } else if (index = 1){
-      return 'Boop!';
-    } else if (index = 0){
-      return 'Beep!';
-    } else {
-      return longList;
-    }
-
-  }
-}
-
-
-
 // User Interface Logic
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
@@ -61,10 +40,5 @@ $(document).ready(function(){
     var response = HAL(inputNumber);
     $("#response").append("<li>"+response+"</li>"+' ');
   });
-  $("form#form2").submit(function(event){
-    event.preventDefault();
-    var longList = parseInt($('input#longList').val());
-    var response2 = longHAL(longList);
-    $('#allValues').append('<li>'+response2+'</li>'+'');
-  });
+
 });

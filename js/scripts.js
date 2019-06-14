@@ -35,8 +35,9 @@ var HAL = function(inputNumber) {
 
 
 var longHAL = function(longList) {
+  debugger;
   alert(longList);
-  for (index = 0; index < inputNumber; index++){
+  for (index = 0; index < long; index++){
     if (index = 2){
       return "I'm Sorry Dave, I'm afraid I can't do that.";
     } else if (index = 1){
@@ -63,7 +64,7 @@ $(document).ready(function(){
   $("form#form2").submit(function(event){
     event.preventDefault();
     var longList = parseInt($('input#longList').val());
-    var response2 =(longList);
+    var response2 = longHAL(longList);
     $('#allValues').append('<li>'+response2+'</li>'+'');
   });
 });

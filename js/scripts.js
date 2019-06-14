@@ -1,38 +1,39 @@
 // Business Logic
-function HAL(number) {
-
+var HAL = function(number) {
+  //debugger;
   if(isNaN(number)) {
     alert("Please enter a valid number");
   } else if (number <=0) {
     alert("Please enter a number that is higher than 0");
   } else {
-    for (var index = num1; num1 <= num2; num1 += incr) {
+    for (var i = 0; i <= number.length; i ++) {
 
-    }if (number == 3) {
+      }if (number == 3) {
+        return "I'm Sorry, Dave, I'm afraid I can't do that.";
+      } else if (number == 2) {
+        return "Boop!";
+      } else if (number == 1) {
+        return "Beep!";
+      } else {
+        return number;
+      }
 
-    } else if (number == 2) {
-
-    } else if (number == 1) {
-
-    } else {
-
-    }
-
+  }
 }
-}
 
 
 
 
 
-var number;
+
 // User Interface Logic
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-  number = parseInt($("input#number").val());
+    var number = parseInt($("input#number").val());
 
-  response = (number);
+
+    var response = HAL(number);
   $("#response").append("<li>"+response+"</li>");
-});
+  });
 });

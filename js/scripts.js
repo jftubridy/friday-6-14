@@ -1,11 +1,12 @@
 // Business Logic
-var HAL = function(number) {
+var HAL = function(inputNumber) {
 var three = 3;
 var two = 2;
-var one = 1;  //debugger;
-  if(isNaN(number)) {
+var one = 1;
+debugger;
+  if(isNaN(inputNumber)) {
     alert("Please enter a valid number");
-  } else if (number <=0) {
+  } else if (inputNumber <=0) {
     alert("Please enter a number that is higher than 0");
   }
   // (number.includes('3',0)) {
@@ -17,18 +18,21 @@ var one = 1;  //debugger;
     // } else {
     //   return number;
     // }
+ alert(typeof(inputNumber));
+    numToString = inputNumber.toString();
+    alert(typeof(numToString));
+    var numArray = numToString.split('');
+    alert(typeof(numArray));
+    for (var index = 0; index <= numArray.length; index ++) {
 
-
-    for (var i = 0; i <= number.length; i ++) {
-
-      }if (number == 3) {
+    }if (numArray[0] == 3) {
         return "I'm Sorry, Dave, I'm afraid I can't do that.";
-      } else if (number == 2) {
+      } else if (numArray[0] == 2) {
         return "Boop!";
-      } else if (number == 1) {
+      } else if (numArray[0] == 1) {
         return "Beep!";
       } else {
-        return number;
+        return inputNumber;
       }
 
 }
@@ -42,7 +46,7 @@ var one = 1;  //debugger;
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    var number = parseInt($("input#number").val());
+    var inputNumber = parseInt($("input#number").val());
     // var numArray = number.split('');
     // for (var i = 0; i <= numArray.length ; i++){
     //   if (three.includes(numArray[i])){
@@ -56,7 +60,7 @@ $(document).ready(function(){
 
   //}
 
-    var response = HAL(number);
+    var response = HAL(inputNumber);
   $("#response").append("<li>"+response+"</li>");
 
 });

@@ -11,10 +11,13 @@ _A website created with JavaScript and HTML where a user can submit a number and
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Response to any 3** | Example input: 3, 13, or 23 | "I'm sorry Dave, I'm afraid I can't do that." |
+| **Response to any 3** | Example input: 3, 13, or 23 | "I'm sorry Dave, ..." |
 | **Response to any 2** | Example input: 2, 12, or 42 | "Boop!" |
 | **Response to any 1**| Example input: 1, 11, or 41 | "Beep!" |
 | **Response to other Int**| Example input: 4, 7, or 40 | 4, 7 or 40 |
+| **Response to NaN**| Example str, '' | "I think you're drunk" |
+| **Response to >= 0** | 0, -2 | "A number we can use Dave" |
+
 
 ## Setup/Installation Requirements
 

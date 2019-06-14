@@ -1,6 +1,9 @@
 body {
   background-color: lightseagreen;
 }
-li  {
+#response li  {
   display: inline-block;
+}
+h1  {
+  text-align: center;
 }
